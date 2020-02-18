@@ -33,11 +33,11 @@ client.on("message", message => {
     }
     }
 })
-let random = (Math.random() * 3000 + 1000)
+let random = (Math.random() * 2000 + 1000)
 //TOWER
 client.on("message", message => {
     console.log(message)
-    if(message.author.id == "280726849842053120" && message.content.includes("⚡ *Energie restante : ") && isTower) {
+    if(message.author.id == "280726849842053120" && message.content.includes("⚡ *Energie restante : ") && isTower && message.mentions.users.first() == client.users.find(u => u.id == admin)) {
         
         setTimeout(() => {
             message.react("🔁")
