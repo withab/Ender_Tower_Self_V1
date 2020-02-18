@@ -1,7 +1,7 @@
 const Discord = require("discord.js")
 const client = new Discord.Client()
  
-let admin = "418347988092583947"
+let admin = "YOUR ID HERE"
 let prefix = "!"
 
 client.on("ready", () => {
@@ -46,4 +46,4 @@ client.on("message", message => {
 
 
 
-client.login("NDE4MzQ3OTg4MDkyNTgzOTQ3.XkxJOA.OHk0g3bZRd-oEcx6qh8c_Zvk_dg")
+client.login("YOUR TOKEN HERE")
